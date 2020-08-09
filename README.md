@@ -91,7 +91,7 @@ function mychildtheme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' ); 
 ```
 
-Now add a statement to enqueue the child theme stylesheet. This is almost the same as enqueing the parent stylesheet. But when you specify the location of this stylesheet, use `get_stylesheet_directory_uri()` instead of `get_template_directory_uri()`. This directs WordPress to look for the stylesheet in the child theme rather than the parent, or in other words: `/wp-content/themes/mychildtheme/style.css.`
+Now add a statement to enqueue the child theme stylesheet. This is almost the same as enqueuing the parent stylesheet. But when you specify the location of this stylesheet, use `get_stylesheet_directory_uri()` instead of `get_template_directory_uri()`. This directs WordPress to look for the stylesheet in the child theme rather than the parent, or in other words: `/wp-content/themes/mychildtheme/style.css.`
 
 ```PHP
 <?php 
